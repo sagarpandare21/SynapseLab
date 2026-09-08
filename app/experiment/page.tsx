@@ -6,7 +6,7 @@ import Navbar from "../../components/Navbar";
 import { PATTERNS } from "../../model/patterns";
 
 export default function ExperimentPage() {
-  const [selectedPattern, setSelectedPattern] = useState("A");
+  const [selectedPattern, setSelectedPattern] = useState("CAT");
   const [weights, setWeights] = useState<number[]>([]);
   const [step, setStep] = useState(0);
   const [lastRecall, setLastRecall] = useState<number | null>(null);
