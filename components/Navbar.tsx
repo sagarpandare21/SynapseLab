@@ -5,8 +5,6 @@ import Link from "next/link";
 export default function Navbar() {
   return (
     <nav className="flex items-center justify-between px-8 py-6 border-b border-white/10 bg-[#070b14]">
-
-      {/* Logo */}
       <Link
         href="/"
         className="text-xl font-bold tracking-widest text-white"
@@ -14,9 +12,7 @@ export default function Navbar() {
         SYNAPSELAB
       </Link>
 
-      {/* Navigation */}
       <div className="hidden md:flex gap-8 text-sm text-gray-400">
-
         <Link
           href="/experiment"
           className="hover:text-cyan-400 transition"
@@ -32,7 +28,7 @@ export default function Navbar() {
         </Link>
 
         <Link
-          href="/bdh"
+          href="/bdh/evidence"
           className="hover:text-cyan-400 transition"
         >
           BDH
@@ -51,7 +47,6 @@ export default function Navbar() {
         >
           Limits
         </Link>
-
       </div>
     </nav>
   );

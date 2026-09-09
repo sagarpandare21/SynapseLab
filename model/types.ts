@@ -1,7 +1,7 @@
 export type PatternName = "CAT" | "DOG" | "BIRD" | "CAR";
 
 export type Pattern = {
-  id: string;
+  id: PatternName;
   name: PatternName;
   vector: number[];
   neuronIndex: number;
